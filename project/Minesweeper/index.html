@@ -1,0 +1,94 @@
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<meta author="Dien-Ju, Lin">
+		<title>◆Minesweeper◆</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script type="text/javascript" src="Model.js"></script>
+        <script type="text/javascript" src="Controller.js"></script>
+		<style type="text/css">
+			#btnRestart	{
+				width: 100px;
+				height: 30px;
+			}
+            .txtGameSetting {
+                width: 100px;
+                height: 30px;
+                
+            }
+			div {
+				text-align:center;
+			}
+			table {
+				margin:0 auto;
+			}
+			button {
+				width:30px;
+				height:30px;
+    			background-color: #888888;
+				font-size:18px;
+				color:white;
+				padding:0px;
+			}
+			button:hover {
+				background-color: lightblue;
+				border: 4px #888888 dashed;
+			}
+            
+            button.open {
+                background-color: lightgray;
+            }
+			button.blank{
+				background-color: #888888;
+			}
+			button.blank.flag{
+				color:red;
+			}
+			button.open.click1 {
+				color:#0000FF;
+			}
+			button.open.click2 {
+				color:#008000;
+			}
+			button.open.click3 {
+				color:#FF0000;
+			}
+			button.open.click4 {
+				color:#000080;
+			}
+			button.open.click5 {
+				color:#800000;
+			}
+			button.open.click6 {
+				color:#008000;
+			}
+			button.open.click7 {
+				color:#008080;
+			}
+			button.open.click8 {
+				color:#808000;
+			}
+			button.open.click0 {
+                color:lightgray;
+			}
+			button.open.boom {
+				color:white;
+                background-color:red;
+			}
+            button.open.boom2 {
+				color:black;
+			}
+		</style>
+	</head>
+	<body>
+		<div>
+			<!--<label onclick="_c()">Click Me!!!</label>-->
+			<!--<button id="btnRestart">Restart</button>-->
+            <input type="text" id="txtWidth" class="txtGameSetting" value="10"/>
+            <input type="text" id="txtHeight" class="txtGameSetting" value="10"/>
+            <input type="text" id="txtLandmine" class="txtGameSetting" value="20"/>
+            <button id="btnRestart" onclick="restart()">Start</button>
+            <table><tbody id="board"></tbody></table>
+		</div>
+	</body>
+</html>

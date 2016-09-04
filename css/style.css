@@ -1,0 +1,155 @@
+@import url(http://fonts.googleapis.com/earlyaccess/cwtexyen.css);
+
+/*      Reset CSS     */
+/** 清除內外邊距 **/
+body, h1, h2, h3, h4, h5, h6, hr, p,
+blockquote,            /* structural elements 結構元素 */
+dl, dt, dd, ul, ol, li,  /* list elements 清單元素 */
+pre,                          /* text formatting elements 文本格式元素 */
+form, fieldset, legend, button, input, textarea, /* form elements 表單元素 */
+th, td,                       /* table elements 表格元素 */
+img {                       /* img elements 圖片元素 */
+    border:medium none;
+    margin: 0;
+    padding: 0;
+}
+
+/** 設置預設字體 **/
+body,button, input, select, textarea {
+    font: 24px/1.5 'cwTeXYen', Helvetica, tahoma, Srial, sans-serif;
+    color: white;
+    text-shadow: 1px 1px 1px black;
+}
+
+h1, h2, h3, h4, h5, h6 { font-size: 100%; }
+em{font-style:normal;}
+/* 重置清單元素 */
+ul, ol { list-style: none; }
+/* 重置超連結元素 */
+a { text-decoration: none; color:#333;}
+a:hover { text-decoration: none; color:#F40; }
+/* 重置圖片元素 */
+img{ border:0px;}
+/* 重置表格元素 */
+table { border-collapse: collapse; border-spacing: 0; }
+
+/*      Main CSS      */
+html {    
+    background-color: azure;
+}
+
+h1 {
+    font-size: 36px;
+}
+
+hr {
+    border: 1px lightsteelblue;
+    border-style: outset;
+}
+
+#container {
+    width: 75%;
+    margin: auto;
+    margin-top: 1em;
+}
+
+#content {
+    width: auto;
+    height: auto;
+    padding: 1em 1em;
+    margin: auto;
+    background-color: steelblue;
+    text-align: justify;
+}
+
+#top {
+    font-size: 36px;
+    padding: 1em;
+    font-family: 'Arial';
+    color: black;
+    background-color: lightsteelblue;
+    border-radius: 16px 16px 0 0;
+}
+
+span {
+    white-space: pre-line;
+    overflow: auto;
+}
+
+button {
+    border-radius: 6px;
+    padding: 0.2em 1em;
+    margin: 0.2em 0.2em;
+    color: black;
+}
+button:hover {
+    background-color: lightsteelblue;
+}
+
+/*      Link CSS      */
+a {
+    color: lightgray;
+    text-decoration: none;
+    font-size: 30px;
+}
+a:hover {
+    color: lightsteelblue;
+}
+
+/*      Navi CSS      */
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: lightsteelblue;
+}
+li {
+    float: left;
+}
+li a {
+    display: block;
+    color: black;
+    text-align: center;
+    font-size:30px;
+    padding: 10px 20px;
+    text-decoration: none;
+}
+li a:hover:not(.active) {
+    background-color: steelblue;
+}
+.active {
+    background-color: steelblue;
+    color: lightsteelblue;
+}
+
+/*      Table CSS      */
+#css_table {
+    display: table;
+    width: 100%;
+}
+#css_table .css_th:nth-child(1) {
+    width: 20%;
+}
+#css_table .css_th:nth-child(2) {
+    width: 30%;
+}
+#css_table .css_th:nth-child(3) {
+    width: 50%;
+}
+#css_table .css_th {
+    display: table-cell;
+    text-align: center;
+    background-color: lightsteelblue;
+    color: black;
+    padding: 4px;
+}
+#css_table .css_tr {
+    display: table-row;
+    border-bottom: 1px solid lightsteelblue;
+}
+#css_table .css_td {
+    display: table-cell;
+    text-align: center;
+    padding: 4px;
+}
